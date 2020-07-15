@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 80%;
+    margin-left: 100px;
+    line-height: 35px;
+}
+.first {
+    margin-left: 24px;
+}
+.output {
+    font-size: 24px;
+}

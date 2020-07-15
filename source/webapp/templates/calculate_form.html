@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <form method="post" action="">
+            {% csrf_token %}
+        <label class="first">First number:</label>
+            <input type="number" name="first"/><br>
+        <label class="second">Second number:</label>
+            <input type="number" name="second"/><Br>
+        <input type="radio" name="sign" value="+"> add<Br>
+        <input type="radio" name="sign" value="-"> subtract<Br>
+        <input type="radio" name="sign" value="*"> multiply<Br>
+        <input type="radio" name="sign" value="/"> divide<Br>
+        <p><input type="submit" value="Calculate">
+    </form>
+</div>
+</body>
+</html>
